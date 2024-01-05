@@ -50,8 +50,8 @@ void CLB1_Initialize(void)
     //Load the bitstream
     CLB1_Configure((uint16_t) &start_clb_config);
 
-    /* CLK LFINTOSC; */
-    CLBCLK = 0x7;
+    /* CLK MFINTOSC-32; */
+    CLBCLK = 0x9;
 
     /* OESEL0 0; OESEL1 0; */
     CLBPPSCON1 = 0x0;
