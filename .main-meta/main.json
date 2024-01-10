@@ -4,8 +4,8 @@
     "content": {
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f13145-cnano-out-of-box-code-mplab-mcc",
-        "version": " ",
-        "displayName": "",
+        "version": "1.0.0",
+        "displayName": "Curiosity Nano Out-of-the-Box Code using PIC16F13145 Microcontroller with MCC Melody",
         "projectName": "pic16f13145-cnano-out-of-box-code-mplab-mcc",
         "shortDescription": "This repository contains the project that comes preloaded on the PIC16F13145 Curiosity Nano board. It contains a simple state machine demo of the Configurable Logic Block (CLB).",
         "ide": {
@@ -19,12 +19,12 @@
             }
         ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC16Fxxxx_DFP",
+            "semverRange": "^1.23.382"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": ">=5.4.1"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -36,9 +36,13 @@
                 "versionRange": "*"
             }
         },
-        "author": "Robert Perkel",
-        "peripherals": [],
-        "keywords": [],
+        "author": "Microchip",
+        "peripherals": [
+            "CLB"
+        ],
+        "keywords": [
+            "Getting Started", "Configurable Custom Logic", "Curiosity Nano", "Melody"
+        ],
         "additionalData": {
             "longDescription": {
                 "metaDataVersion": "1.0.0",
