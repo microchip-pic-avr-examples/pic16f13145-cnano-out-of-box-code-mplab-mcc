@@ -21,7 +21,7 @@ This project comes preloaded on the PIC16F13145 Curiosity Nano board when the us
 
 ## Hardware Used
 
-- [PIC16F13145 Curiosity Nano Evaluation Kit (???)](#)
+- [PIC16F13145 Curiosity Nano Evaluation Kit (EV06M52A)](#)
 
 ## Setup
 
@@ -78,21 +78,32 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 | RC2 | LED0 Output (Active LOW)
 | RC3 | SW0 Pushbutton Input (Active LOW, requires pullup)
 
+## How to Program the Curiosity Nano
+
+1. Connect the Curiosity Nano to the computer with a USB Type-C Cable
+2. Press the Programming Button (Arrow into the Microcontroller)
+![Programming Button]()
+3. Select the Curiosity Nano from the list
+![Selecting a tool](./images/toolSelect.PNG)  
+4. Wait for the code to compile and programming to complete
+
 ## Operation
 
-The CLB on the Curiosity Nano is used as a state machine for the LED. On power-up, the LED blinks at 71 Hz. Each time SW0 is pressed on the Curiosity Nano, the state machine advances. The table below shows the outputs for each button press.
+The CLB on the Curiosity Nano is used as a state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. Each time SW0 is pressed on the Curiosity Nano, the state machine advances. The table below shows the outputs for each button press.
 
 | State | LED Behavior |
 | ------------ | ------------ |
-| 0 | The LED blinks at 71 Hz.
-| 1 | Brightness Level 1 (14%)
-| 2 | Brightness Level 2 (28%)
-| 3 | Brightness Level 3 (43%)
-| 4 | Brightness Level 4 (57%)
-| 5 | Brightness Level 5 (71%)
-| 6 | Brightness Level 6 (86%)
-| 7 | Brightness Level 7 (100%)
+| 0 | The LED blinks at (nominally) 7.8 Hz.
+| 1 | Brightness Level 1 (12.5%)
+| 2 | Brightness Level 2 (25%)
+| 3 | Brightness Level 3 (37.5%)
+| 4 | Brightness Level 4 (50%)
+| 5 | Brightness Level 5 (62.5%)
+| 6 | Brightness Level 6 (75%)
+| 7 | Brightness Level 7 (87.5%)
+
+Note: Percentages are with respect to active LOW.
 
 ## Summary
 
-<!-- Summarize what the example has shown -->
+This example has shown how to get started with the PIC16F13145 family of microcontrollers.
