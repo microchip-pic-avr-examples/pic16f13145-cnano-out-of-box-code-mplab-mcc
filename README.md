@@ -8,7 +8,7 @@ This project comes preloaded on the PIC16F13145 Curiosity Nano board when the us
 
 ## Related Documentation
 
-- [PIC16F13145 Datasheet](#)
+- [PIC16F13145 Product Page](#)
 - [CLB Peripheral Page](#)
 - [Online, Standalone CLB Configuration Tool](#)
 
@@ -67,7 +67,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 
      - Name RC2 to LED0
      - Name RC3 to SW0
-     - Set Weak Pullup for RC3  
+     - Enable Weak Pullup for RC3  
 
 ![Pin Settings](./images/pinSettings.PNG)  
 
@@ -81,8 +81,8 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 ## How to Program the Curiosity Nano
 
 1. Connect the Curiosity Nano to the computer with a USB Type-C Cable
-2. Press the Programming Button (Arrow into the Microcontroller)
-![Programming Button]()
+2. Press the Programming Button (arrow into the Microcontroller)  
+![Programming Button](./images/programmingIcon.PNG)  
 3. Select the Curiosity Nano from the list
 ![Selecting a tool](./images/toolSelect.PNG)  
 4. Wait for the code to compile and programming to complete
@@ -106,4 +106,4 @@ Note: Percentages are with respect to active LOW.
 
 ## Summary
 
-This example has shown how to get started with the PIC16F13145 family of microcontrollers.
+This example has shown how to get started with the CLB on the PIC16F13145 family of microcontrollers.
