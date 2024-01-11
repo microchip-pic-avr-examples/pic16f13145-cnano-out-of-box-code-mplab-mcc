@@ -22,6 +22,23 @@ This project comes preloaded on the PIC16F13145 Curiosity Nano board when the us
 
 - [PIC16F13145 Curiosity Nano Evaluation Kit (EV06M52A)](https://www.microchip.com/en-us/development-tool/EV06M52A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
 
+## Operation
+
+The CLB peripheral on the PIC16F13145 acts as a button debouncer and state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. All other states of the state machine change the brightness of the LED via Pulse Width Modulation (PWM) dimming, which is synthesized inside the CLB as well. The pushbutton, SW0, on the Curiosity Nano is debounced within the CLB and used to advance the state machine. The table below shows the behavior for each button press.
+
+| State | LED Behavior |
+| ------------ | ------------ |
+| 0 | The LED blinks at (nominally) 7.8 Hz.
+| 1 | Brightness Level 1 (12.5%)
+| 2 | Brightness Level 2 (25%)
+| 3 | Brightness Level 3 (37.5%)
+| 4 | Brightness Level 4 (50%)
+| 5 | Brightness Level 5 (62.5%)
+| 6 | Brightness Level 6 (75%)
+| 7 | Brightness Level 7 (87.5%)
+
+Note: Percentages are with respect to active LOW.  
+
 ## Setup
 
 All necessary hardware is integrated on the Curiosity Nano. No external components are required.
@@ -86,23 +103,6 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 4. Select the Curiosity Nano from the list  
 ![Selecting a tool](./images/toolSelect.PNG)  
 5. Wait for the code to compile and programming to complete
-
-## Operation
-
-The CLB peripheral on the PIC16F13145 acts as a button debouncer and state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. All other states of the state machine change the brightness of the LED via Pulse Width Modulation (PWM) dimming, which is synthesized inside the CLB as well. The pushbutton, SW0, on the Curiosity Nano is debounced within the CLB and used to advance the state machine. The table below shows the behavior for each button press.
-
-| State | LED Behavior |
-| ------------ | ------------ |
-| 0 | The LED blinks at (nominally) 7.8 Hz.
-| 1 | Brightness Level 1 (12.5%)
-| 2 | Brightness Level 2 (25%)
-| 3 | Brightness Level 3 (37.5%)
-| 4 | Brightness Level 4 (50%)
-| 5 | Brightness Level 5 (62.5%)
-| 6 | Brightness Level 6 (75%)
-| 7 | Brightness Level 7 (87.5%)
-
-Note: Percentages are with respect to active LOW.
 
 ## Summary
 This example has shown how to get started with the CLB on the PIC16F13145 family of microcontrollers.
