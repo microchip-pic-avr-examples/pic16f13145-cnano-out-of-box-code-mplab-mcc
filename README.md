@@ -82,7 +82,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 
 1. Connect the Curiosity Nano to the computer with a USB Type-C Cable
 2. Open the project folder in MPLAB X IDE
-3. Press the Programming Button (arrow into the microcontroller) on the top toolbar
+3. Press the Programming Button (arrow into the microcontroller) on the top toolbar  
 ![Programming Button](./images/programmingIcon.PNG)  
 4. Select the Curiosity Nano from the list  
 ![Selecting a tool](./images/toolSelect.PNG)  
