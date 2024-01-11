@@ -51,7 +51,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
                * You can also maximize the current window in MPLAB X IDE by double-clicking on the tab of the desired window to maximize. Double-clicking on this again will return it to normal size.
                     * Window &rarr; Reset Windows can be used to reset all of the window positions and sizes, if issues occur.
      * Synthesize the Design
-          * Click on the Synthesize button in the bottom left corner to generate the output bitstream. 
+          * Click on the Synthesize button in the bottom left corner to generate the output bitstream.  
 ![CLB Synthesize Button](./images/CLBSynthesizer_synthesize.PNG)  
 
 **Note:** Synthesizing the design is required for the utilized CLB I/O to appear in the pin grid!
@@ -84,7 +84,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 2. Open the project folder in MPLAB X IDE
 3. Press the Programming Button (arrow into the microcontroller) on the top toolbar
 ![Programming Button](./images/programmingIcon.PNG)  
-4. Select the Curiosity Nano from the list
+4. Select the Curiosity Nano from the list  
 ![Selecting a tool](./images/toolSelect.PNG)  
 5. Wait for the code to compile and programming to complete
 
