@@ -4,19 +4,19 @@
 
 # Curiosity Nano Out-of-the-Box Code using PIC16F13145 Microcontroller with MCC Melody
 
-This project comes preloaded on the PIC16F13145 Curiosity Nano board when the user first plugs it in. It consists of a simple state machine demonstration of the Configurable Logic Block (CLB) peripheral. The CLB is used to control the behavior and/or brightness of the on-board LED. 
+This project comes preloaded on the PIC16F13145 Curiosity Nano board when the user first plugs it in. It consists of a simple state machine demonstration of the Configurable Logic Block (CLB) peripheral that controls the behavior and/or brightness of the on-board LED. 
 
 ## Related Documentation
 
-- [PIC16F13145 Product Page](#)
-- [CLB Peripheral Page](#)
-- [Online, Standalone CLB Configuration Tool](#)
+- [PIC16F13145 Product Page](https://www.microchip.com/en-us/product/PIC16F13145?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
+- [CLB Peripheral Page](https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/core-independent-and-analog-peripherals/system-flexibility/configurable-logic-block?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
+- [Online, Standalone CLB Configuration Tool](https://logic.microchip.com/clbsynthesizer/)
 
 ## Software Used
 
-- [MPLAB® X IDE v6.15.0 or newer](#)
-- [MPLAB XC8 v2.45.0 or newer compiler](#)
-- [MPLAB Code Configurator](#)
+- [MPLAB® X IDE v6.15.0 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
+- [MPLAB XC8 v2.45.0 or newer compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
+- [MPLAB Code Configurator](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
 - PIC16F1xxxx_DFP v1.23.382 or newer
 
 ## Hardware Used
@@ -46,12 +46,12 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
           * CLB Synthesizer &rarr; Load...
                * Select `CnanoCLBdemo.clb` inside of the source code folder  
 ![Image of the CLB Synthesizer](./images/CLBSynthesizer_startup.PNG)  
-               * Tip: Click on the icons in the CLB Synthesizer tab toolbar to hide properties, components, or problems for more working space!  
+               * Tip: Click on these buttons in the CLB Synthesizer tab toolbar to hide the sidebars for more working space!  
 ![CLB Window Controls](./images/CLBSynthesizer_windowControls.PNG)  
                * You can also maximize the current window in MPLAB X IDE by double-clicking on the tab of the desired window to maximize. Double-clicking on this again will return it to normal size.
-                    * Window &rarr; Reset Windows can be used to reset window positions and sizes, if needed.
+                    * Window &rarr; Reset Windows can be used to reset all of the window positions and sizes, if issues occur.
      * Synthesize the Design
-          * Click on the Synthesize button in the bottom left corner  
+          * Click on the Synthesize button in the bottom left corner to generate the output bitstream. 
 ![CLB Synthesize Button](./images/CLBSynthesizer_synthesize.PNG)  
 
 **Note:** Synthesizing the design is required for the utilized CLB I/O to appear in the pin grid!
@@ -81,15 +81,16 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 ## How to Program the Curiosity Nano
 
 1. Connect the Curiosity Nano to the computer with a USB Type-C Cable
-2. Press the Programming Button (arrow into the Microcontroller)  
+2. Open the project folder in MPLAB X IDE
+3. Press the Programming Button (arrow into the microcontroller) on the top toolbar
 ![Programming Button](./images/programmingIcon.PNG)  
-3. Select the Curiosity Nano from the list
+4. Select the Curiosity Nano from the list
 ![Selecting a tool](./images/toolSelect.PNG)  
-4. Wait for the code to compile and programming to complete
+5. Wait for the code to compile and programming to complete
 
 ## Operation
 
-The CLB on the Curiosity Nano is used as a state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. Each time SW0 is pressed on the Curiosity Nano, the state machine advances. The table below shows the outputs for each button press.
+The CLB on the Curiosity Nano is used as a state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. Each time SW0 is pressed on the Curiosity Nano, the state machine advances. The table below shows the behavior for each button press.
 
 | State | LED Behavior |
 | ------------ | ------------ |
