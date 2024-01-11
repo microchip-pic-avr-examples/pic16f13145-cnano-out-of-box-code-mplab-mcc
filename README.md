@@ -49,7 +49,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
                * Tip: Click on these buttons in the CLB Synthesizer tab toolbar to hide the sidebars for more working space!  
 ![CLB Window Controls](./images/CLBSynthesizer_windowControls.PNG)  
                * You can also maximize the current window in MPLAB X IDE by double-clicking on the tab of the desired window to maximize. Double-clicking on this again will return it to normal size.
-                    * Window &rarr; Reset Windows can be used to reset all of the window positions and sizes, if issues occur.
+                    * Window &rarr; Reset Windows can be used to reset all of the window positions and sizes in the IDE, if issues occur.
      * Synthesize the Design
           * Click on the Synthesize button in the bottom left corner to generate the output bitstream.  
 ![CLB Synthesize Button](./images/CLBSynthesizer_synthesize.PNG)  
