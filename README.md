@@ -2,8 +2,8 @@
 
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
-# Curiosity Nano Out-of-the-Box Code using PIC16F13145 Microcontroller with MCC Melody
-This project comes preloaded on the PIC16F13145 Curiosity Nano board when the user first plugs it in. It consists of a state machine demonstration of the Configurable Logic Block (CLB) peripheral that controls the behavior and/or brightness of the on-board LED. 
+# Curiosity Nano Out-of-the-Box Code Using PIC16F13145 Microcontroller with MCC Melody
+This project comes preloaded on the PIC16F13145 Curiosity Nano Base for Click boards&trade; when the user first plugs it in. It consists of a state machine demonstration of the Configurable Logic Block (CLB) peripheral that controls the behavior and/or brightness of the on-board LED. 
 
 ## Related Documentation
 
@@ -15,7 +15,7 @@ This project comes preloaded on the PIC16F13145 Curiosity Nano board when the us
 
 - [MPLAB® X IDE v6.15.0 or newer](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
 - [MPLAB XC8 v2.45.0 or newer compiler](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
-- [MPLAB Code Configurator](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
+- [MPLAB Code Configurator (MCC)](https://www.microchip.com/en-us/tools-resources/configure/mplab-code-configurator?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
 - PIC16F1xxxx_DFP v1.23.382 or newer
 
 ## Hardware Used
@@ -23,6 +23,8 @@ This project comes preloaded on the PIC16F13145 Curiosity Nano board when the us
 - [PIC16F13145 Curiosity Nano Evaluation Kit (EV06M52A)](https://www.microchip.com/en-us/development-tool/EV06M52A?utm_source=GitHub&utm_medium=TextLink&utm_campaign=MCU8_MMTCha_PIC16F13145&utm_content=pic16f13145-cnano-out-of-box-code-mplab-mcc-github&utm_bu=MCU08)
 
 ## Operation
+
+![GIF of Demo](./images/demo.gif)  
 
 The CLB peripheral on the PIC16F13145 acts as a button debouncer and state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. All other states of the state machine change the brightness of the LED via Pulse Width Modulation (PWM) dimming, which is synthesized inside the CLB as well. The pushbutton, SW0, on the Curiosity Nano is debounced within the CLB and used to advance the state machine. The table below shows the behavior for each button press.
 
@@ -49,7 +51,7 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
      * CONFIG1
           * External Oscillator mode selection bits: Oscillator not enabled  
           * Power-up default value for COSC bits: HFINTOSC (1 MHz)  
-          * VDD Range Analog Calibration Selection bit: Internal analog systems are calibrated for operation between VDD = 1.8V - 3.6V  
+          * V<sub>DD</sub> Range Analog Calibration Selection bit: Internal analog systems are calibrated for operation between VDD = 1.8V - 3.6V  
 
 ![Image of CONFIG1](./images/configBits_CONFIG1.PNG)
 
@@ -96,13 +98,13 @@ All necessary hardware is integrated on the Curiosity Nano. No external componen
 
 ## How to Program the Curiosity Nano
 
-1. Connect the Curiosity Nano to the computer with a USB Type-C Cable
-2. Open the project folder in MPLAB X IDE
-3. Press the Programming Button (arrow into the microcontroller) on the top toolbar  
+1. Connect the Curiosity Nano to the computer with a USB Type-C Cable.
+2. Open the project folder in MPLAB X IDE.
+3. Press the Programming Button (arrow into the microcontroller) on the top toolbar.  
 ![Programming Button](./images/programmingIcon.PNG)  
-4. Select the Curiosity Nano from the list  
+4. Select the Curiosity Nano from the list.  
 ![Selecting a tool](./images/toolSelect.PNG)  
-5. Wait for the code to compile and programming to complete
+5. Wait for the code to compile and programming to complete.
 
 ## Summary
 This example has shown how to get started with the CLB on the PIC16F13145 family of microcontrollers.
