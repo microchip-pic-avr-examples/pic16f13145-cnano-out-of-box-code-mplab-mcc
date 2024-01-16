@@ -3,7 +3,7 @@
 [![MCHP](images/microchip.png)](https://www.microchip.com)
 
 # Curiosity Nano Out-of-the-Box Code Using PIC16F13145 Microcontroller with MCC Melody
-This project comes preloaded on the PIC16F13145 Curiosity Nano Base for Click boards&trade; when the user first plugs it in. It consists of a state machine demonstration of the Configurable Logic Block (CLB) peripheral that controls the behavior and/or brightness of the on-board LED. 
+This project comes preloaded on the PIC16F13145 Curiosity Nano Evaluation Kit when the user first plugs it in. It consists of a state machine demonstration of the Configurable Logic Block (CLB) peripheral that controls the behavior and/or brightness of the on-board LED. 
 
 ## Related Documentation
 
