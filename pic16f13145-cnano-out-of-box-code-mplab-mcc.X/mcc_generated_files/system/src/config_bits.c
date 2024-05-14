@@ -1,5 +1,5 @@
 /**
- * CONFIGURATION BITS Generated Driver Source File
+ * Configuration Bits Generated Driver Source File
  * 
  * @file config_bits.c
  * 
@@ -7,7 +7,9 @@
  * 
  * @brief This file contains the API Implementation for the Device Configuration Bits driver.
  *
- * @version Driver Version 2.0.1
+ * @version Driver Version 2.0.2
+ *
+ * @version Package Version 4.1.4
 */
 
 /*
@@ -50,7 +52,6 @@
 #pragma config BORV = LO     // Brown-out Reset Voltage Selection->Brown-out Reset Voltage (VBOR) set to 1.9V
 #pragma config PPS1WAY = ON     // Peripheral Pin Select one-way control->The PPSLOCKED bit can be cleared and set only once after an unlocking sequence is executed; once PPSLOCKED is set, all future changes to PPS registers are prevented
 #pragma config STVREN = ON     // Stack Overflow/Underflow Reset Enable bit->Stack Overflow or Underflow will cause a reset
-#pragma config DEBUG = OFF     // Background Debugger->Background Debugger disabled
 
 //CONFIG3
 #pragma config WDTCPS = WDTCPS_31     // WDT Period Select bits->Divider ratio 1:65536; software control of WDTPS

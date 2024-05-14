@@ -7,7 +7,7 @@
  *
  * @brief This file contains the implementation of public and private functions for the CLB1 driver.
  *
- * @version CLB1 Driver Version 1.0.0
+ * @version CLB1 Driver Version 1.1.0
 */
 /*
 © [2024] Microchip Technology Inc. and its subsidiaries.
@@ -110,7 +110,7 @@ void CLB1_Configure(uint16_t start_address)
 
     uint16_t end_address;
 
-    end_address = start_address + 102;
+    end_address = start_address + BITSTREAM_SIZE;
 
     // Set the bitstream address
     CRC_SetScannerAddressLimit(start_address, end_address);
@@ -189,19 +189,4 @@ uint32_t CLB1_SWIN_Read32(void)
 
 	return result;
 }
-
-uint32_t CLB1_GetCLBSWOUT(void)
-{
-    uint32_t result = 0x00;
-
-    result = (uint32_t)CLBSWOUTL;
-    result = result | ((uint32_t)CLBSWOUTM << 8);
-    result = result | ((uint32_t)CLBSWOUTH << 16);
-    result = result | ((uint32_t)CLBSWOUTU << 24);
-
-	return result;
-}
-
-
-
 

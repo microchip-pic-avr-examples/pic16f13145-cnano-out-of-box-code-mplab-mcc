@@ -8,7 +8,7 @@
  *
  * @brief This file contains the prototypes and other data types for the CLB1 driver
  *
- * @version CLB1 Driver Version 1.0.0
+ * @version CLB1 Driver Version 1.1.0
 */
 /*
 © [2024] Microchip Technology Inc. and its subsidiaries.
@@ -33,6 +33,8 @@
 
 #ifndef CLB1_H
 #define CLB1_H
+
+#define BITSTREAM_SIZE 102UL
 
 /**
   Section: Included Files
@@ -125,14 +127,6 @@ uint16_t CLB1_SWIN_Read16(void);
  * @return uint32_t data - CLB output data.
  */
 uint32_t CLB1_SWIN_Read32(void);
-
-/**
- * @ingroup clb1
- * @brief Gets the data from the CLB Data registers.
- * @param None.
- * @return uint32_t data - CLB output data.
- */
-uint32_t CLB1_GetCLBSWOUT(void);
 
 
 #endif // CLB1_H

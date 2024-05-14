@@ -56,8 +56,8 @@ int main(void)
     // Disable the Peripheral Interrupts 
     //INTERRUPT_PeripheralInterruptDisable(); 
 
+
     while(1)
     {
-        
     }    
 }
