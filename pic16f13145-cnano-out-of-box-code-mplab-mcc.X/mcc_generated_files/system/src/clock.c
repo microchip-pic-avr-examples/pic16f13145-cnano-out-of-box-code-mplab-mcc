@@ -9,11 +9,11 @@
  *
  * @version Driver Version 2.0.4
  *
- * @version Package Version 4.3.6
+ * @version Package Version 4.3.7
 */
 
 /*
-© [2024] Microchip Technology Inc. and its subsidiaries.
+© [2026] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
