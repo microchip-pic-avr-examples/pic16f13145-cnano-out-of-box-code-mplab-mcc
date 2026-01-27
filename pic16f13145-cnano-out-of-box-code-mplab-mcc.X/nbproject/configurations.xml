@@ -319,7 +319,7 @@
         <property key="memories.programmemory.ranges" value="0-1fff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Release Folder/EBE/pic16f13145-cnano-out-of-box-code-mplab-mcc/pic16f13145-cnano-out-of-box-code-mplab-mcc.X/debug/free/pic16f13145-cnano-out-of-box-code-mplab-mcc_ptg"/>
+                  value="C:/Users/C62081/Documents/GIT Repos/pic16f13145-cnano-out-of-box-code-mplab-mcc/pic16f13145-cnano-out-of-box-code-mplab-mcc.X/debug/free/pic16f13145-cnano-out-of-box-code-mplab-mcc_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

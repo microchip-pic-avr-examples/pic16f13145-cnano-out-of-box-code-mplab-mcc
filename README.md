@@ -42,7 +42,7 @@ To program the Curiosity Nano board with this MPLAB X project, follow the steps 
 ## Concept
 
 The CLB peripheral on the PIC16F13145 acts as a button debouncer and state machine for the LED. On power-up, the LED blinks at (nominally) 7.8 Hz. All other states of the state machine change the brightness of the LED via Pulse Width Modulation (PWM) dimming, which is synthesized inside the CLB as well. The pushbutton, SW0, on the Curiosity Nano is debounced within the CLB and used to advance the state machine. The table below shows the behavior for each button press. The CLB circuit is presented in the image below:
-<br><img src="images/mcc_clb_circuit.png" width="600">
+<br><img src="images/mcc_clb_circuit.png" width="1000">
 
 | State | LED Behavior                          |
 | ----- | ------------------------------------- |
@@ -69,7 +69,7 @@ The following peripheral and clock configurations are set up using the MPLAB Cod
        <br><img src="images/mcc_config_bits_1.png" width="400">
    - CONFIG3:
      - WDT operating mode: WDT Disabled, SEN is ignored
-       <br><img src="images/mcc_config_bits_3.pnG" width="400">
+       <br><img src="images/mcc_config_bits_3.png" width="400">
 
 2. CLB Synthesizer Library:
    - Enable CLB: Enabled
